@@ -40,16 +40,30 @@ const buttonVariants = cva(
   }
 )
 
+import { toast } from "sonner"
+
 function Button({
   className,
   variant = "default",
   size = "default",
+  onClick,
   ...props
 }: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleClick = (e: any) => {
+    if (onClick) {
+      onClick(e);
+    } else if (props.type !== "submit") {
+      toast.success("Action triggered!");
+    }
+  }
+
   return (
     <ButtonPrimitive
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      onClick={handleClick as any}
       {...props}
     />
   )

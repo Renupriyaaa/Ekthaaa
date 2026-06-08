@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from "sonner";
 import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
 import { Constellation } from "./pages/Constellation";
@@ -13,6 +14,7 @@ import { CoffeeChat } from "./pages/CoffeeChat";
 function App() {
   return (
     <BrowserRouter>
+      <Toaster position="top-center" />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

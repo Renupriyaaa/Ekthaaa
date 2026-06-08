@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { toast } from "sonner";
 import { Sparkles, Home, Network, Users, Compass, UserPlus, Calendar, Target, MessageSquare, Coffee } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -96,7 +97,7 @@ export function Sidebar() {
       </div>
 
       <div className="border-t p-4">
-        <button className="flex w-full items-center gap-3 rounded-xl p-2 transition-colors hover:bg-accent">
+        <button onClick={() => toast("User profile settings coming soon!")} className="flex w-full items-center gap-3 rounded-xl p-2 transition-colors hover:bg-accent">
           <Avatar className="h-9 w-9">
             <AvatarImage src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="@user" />
             <AvatarFallback>RP</AvatarFallback>

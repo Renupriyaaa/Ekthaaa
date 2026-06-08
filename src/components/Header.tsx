@@ -1,3 +1,4 @@
+import { toast } from "sonner";
 import { Bell, Search } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
@@ -19,7 +20,7 @@ export function Header() {
       </div>
 
       <div className="flex items-center gap-4 pl-4">
-        <button className="relative flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background transition-colors hover:bg-accent text-foreground/70">
+        <button onClick={() => toast("Notifications feature coming soon!")} className="relative flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background transition-colors hover:bg-accent text-foreground/70">
           <Bell className="h-5 w-5" />
           <span className="absolute right-2.5 top-2.5 h-2 w-2 rounded-full bg-pink-500 border-2 border-background"></span>
         </button>
