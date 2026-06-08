@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Sparkles, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const conversations = [
   { id: 1, name: "Rahul Sharma", role: "Startup Founder", lastMsg: "Let's catch up this weekend?", unread: 2, avatar: "RS", color: "bg-orange-500", online: true },

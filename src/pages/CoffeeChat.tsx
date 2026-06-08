@@ -1,6 +1,6 @@
 import { Coffee, Calendar, Clock, Flame, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export function CoffeeChat() {
   return (

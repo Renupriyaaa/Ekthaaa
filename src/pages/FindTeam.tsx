@@ -1,7 +1,7 @@
-import { Users, Clock, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const teams = [
   { name: "Pulse — AI Study Buddy", desc: "Building a voice-native LLM tutor for high school students.", category: "Startup", timeline: "3 months", roles: ["Frontend Developer", "Prompt Engineer"], lead: "Rahul S.", avatar: "RS" },

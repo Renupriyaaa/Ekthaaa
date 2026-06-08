@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowUpRight, Search, Heart, Bookmark, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const recommendations = [
   {

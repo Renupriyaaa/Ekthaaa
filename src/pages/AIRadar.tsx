@@ -1,6 +1,6 @@
-import { Target, Search, Sparkles, MapPin, Code2 } from "lucide-react";
+import { Target, Sparkles, MapPin, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const radarMatches = [
   { name: "Rahul Sharma", role: "Startup Founder at InnovaTech", match: 96, avatar: "RS", color: "bg-orange-500", reasons: ["Hiring frontend interns", "Same stack (React, TS)", "Bangalore"] },
